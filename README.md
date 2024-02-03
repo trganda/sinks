@@ -47,6 +47,62 @@ java.lang.ProcessBuilder#command(String... command);
 java.lang.ProcessImpl#start(String[] cmdarray, java.util.Map<String,String> environment, String dir, ProcessBuilder.Redirect[] redirects, boolean redirectErrorStream)
 ```
 
+`org.springframework.context.support.ClassPathXmlApplicationContext`
+
+```java
+org.springframework.context.support.ClassPathXmlApplicationContext#ClassPathXmlApplicationContext(String configLocation)
+
+org.springframework.context.support.ClassPathXmlApplicationContext#ClassPathXmlApplicationContext(String... configLocations)
+```
+
+`org.springframework.context.support.FileSystemXmlApplicationContext`
+
+```java
+org.springframework.context.support.FileSystemXmlApplicationContext#FileSystemXmlApplicationContext(String configLocation)
+
+org.springframework.context.support.FileSystemXmlApplicationContext#FileSystemXmlApplicationContext(String... configLocations)
+```
+
+`java.lang.Class`
+
+```java
+java.lang.Class#forName(String className)
+
+java.lang.Class#forNameforName(String name, boolean initialize, ClassLoader loader)
+
+java.lang.Class#getMethod(String name, Class<?>... parameterTypes)
+
+java.lang.Class#getDeclaredMethod(String name, Class<?>... parameterTypes)
+```
+
+`java.lang.reflect.Method`
+
+```java
+java.lang.reflect.Method#invoke(Object obj, Object... args)
+```
+
+`java.lang.reflect.Constructor`
+
+```java
+java.lang.reflect.Constructor#newInstance(Object ... initargs)
+```
+
+`java.lang.ClassLoader`
+
+```java
+java.lang.ClassLoader#loadClass(String name)
+
+java.lang.ClassLoader#loadClass(String name, boolean resolve)
+
+java.lang.ClassLoader#defineClass(String name, byte[] b, int off, int len)
+```
+
+`sun.reflect.misc.MethodUtil`
+
+```java
+sun.reflect.misc.MethodUtil#invoke(Method m, Object obj, Object[] params)
+```
+
 ## JNDI
 
 `javax.naming.spi.NamingManager`, `javax.naming.spi.DirectoryManager` extended the `javax.naming.spi.NamingManager`
@@ -105,7 +161,7 @@ java.net.URL#openConnection(Proxy proxy)
 java.net.URL#openStream()
 ```
 
-## XXE
+## XML External Entity
 
 `javax.xml.parsers.DocumentBuilder`
 
